@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2794645491173604121}
   - component: {fileID: 7365483382730393156}
   - component: {fileID: 3495072473711365279}
+  - component: {fileID: 802349576263595894}
   m_Layer: 0
   m_Name: EggShot
   m_TagString: Untagged
@@ -151,3 +152,15 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.25000006
+--- !u!114 &802349576263595894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632911727657586868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a450ad09d16ac5f4ba8629dc119171f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
