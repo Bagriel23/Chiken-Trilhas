@@ -2,18 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerContactHandler : MonoBehaviour
 {
+    [SerializeField] private string nextLevel;
+    [SerializeField] private string gameOverScene;
+
     public Image itemImage;
 
     bool canWin = false;
+
+    public PlayerAudioController audioContrtoller;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Player collided with enemy");
+            SceneManager.LoadScene(gameOverScene);
         }
     }
 
@@ -25,13 +31,15 @@ public class PlayerContactHandler : MonoBehaviour
             Destroy(collision.gameObject);
             itemImage.color = Color.white;
             canWin = true;
+
+            audioContrtoller.PlayGetItem();
         }
 
         if (collision.gameObject.CompareTag("FinalPoint"))
         {
             if (canWin)
             {
-                Debug.Log("Player has reached the final point");
+                SceneManager.LoadScene(nextLevel);
             }
             else
             {

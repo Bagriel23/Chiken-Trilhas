@@ -11,7 +11,9 @@ public class ProjectileController : MonoBehaviour
             Debug.Log("Projectile collided with enemy");
             Destroy(collision.gameObject);
             Destroy(gameObject);
+        
+            FindFirstObjectByType<SFXController>().PlayEnemyDeath();
         }
     }
 }
-
+    
