@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private void OnEnable()
