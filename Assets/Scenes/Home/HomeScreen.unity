@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 49923458}
   m_Layer: 5
-  m_Name: Buttons Group
+  m_Name: ButtonsGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,6 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstPhase: Level1
+  menuScene: HomeScren
 --- !u!1 &500731976
 GameObject:
   m_ObjectHideFlags: 0
@@ -4150,7 +4151,7 @@ GameObject:
   - component: {fileID: 1351340150}
   - component: {fileID: 1351340151}
   m_Layer: 0
-  m_Name: Chicken Adventure
+  m_Name: ChickenAdventure
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

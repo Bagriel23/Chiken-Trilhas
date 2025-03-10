@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstPhase: Level1
-  menuScene: 
+  menuScene: HomeScreen
 --- !u!1 &500731976
 GameObject:
   m_ObjectHideFlags: 0

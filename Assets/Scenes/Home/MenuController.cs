@@ -26,13 +26,13 @@ public class MenuController : MonoBehaviour
 
     public void QuitButton()
     {
-        if (Application.isEditor)
-        {
-            UnityEditor.EditorApplication.isPlaying = false;
-        }
-        else
-        {
+        //if (Application.isEditor)
+        //{
+        //    UnityEditor.EditorApplication.isPlaying = false;
+        //}
+        //else
+        //{
             Application.Quit();
-        }
+        //}
     }
 }
